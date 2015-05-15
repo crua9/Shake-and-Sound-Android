@@ -5,9 +5,127 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select the sound you want to play"
+            android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="#ff000000" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Click here to find out more about the app and the dev."
+            android:id="@+id/dev"
+            android:layout_marginBottom="4dp"
+            />
+
+        <!--
+        For above, I need to use my real voice and tell people how they can support the app
+        (If it's fully free.
+        Also, I need to direct a person to my YouTube channel.
+
+        Maybe a pop up TRH pic with a click here that takes people to the YouTube channel.
+
+        -->
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="#ff00f1ff"/>
+
+
+
+
+
+        <!---
+        add buttons to make sounds. Free users get x amount of sounds for free.
+        (I need to figure out how to make a paid for in app code that I can share)
+        -->
+
+
+        <!--
+        Free sounds
+        -->
+       <!-- <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="random"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+             />
+
+        Random sound. Maybe a paid one
+
+        -->
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get Back To work"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:id="@+id/work"
+            />
+        <!-- Set to default. People seem to like this one (get back to work) -->
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Whip"
+            android:id="@+id/whip"
+            android:layout_marginBottom="4dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Boom"
+            android:id="@+id/boom"
+            android:layout_marginBottom="4dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gun"
+            android:id="@+id/gun"
+            android:layout_marginBottom="4dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I'm the big shot. Look at me"
+            android:id="@+id/big"
+            android:layout_marginBottom="4dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Crying Baby"
+            android:id="@+id/baby"
+            android:layout_marginBottom="4dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Money"
+            android:id="@+id/money"
+            android:layout_marginBottom="4dp"/>
+
+
+    </LinearLayout>
 
 
 </RelativeLayout>
